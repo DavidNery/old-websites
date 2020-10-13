@@ -1,0 +1,22 @@
+# Proibir de ver o .htaccess
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+	order allow,deny
+	deny from all
+	satisfy all
+</Files>
+
+# Impedir listagem dos arquivos
+Options All -Indexes
+
+#Remover .php dos links
+RewriteEngine on
+RewriteRule ^(postagem(\/?)([a-z0-9]+)?)$ postagem.php?id=$3 [NC,L]
+RewriteRule ^(foto(\/?)([a-z0-9]+)?)$ getfoto.php?usuario=$3 [NC]
+RewriteRule ^(pfoto(\/?)([a-z0-9]+)?)$ getpfoto.php?id=$3 [NC]
+RewriteRule ^painel\/(apagarcategoria(\/?)([a-z0-9]+)?)$ system/delCategoria.php?id=$3 [NC]
+RewriteRule ^painel\/(apagarpostagem(\/?)([a-z0-9]+)?)$ system/delPostagem.php?id=$3 [NC]
+RewriteRule ^painel\/(apagarusuario(\/?)([a-z0-9]+)?)$ system/delUsuario.php?id=$3 [NC]
+RewriteRule ^painel\/(editpostagem(\/?)([a-z0-9]+)?)$ painel/editpostagem.php?id=$3 [NC]
+RewriteRule ^painel\/(editusuario(\/?)([a-z0-9]+)?)$ painel/editusuario.php?id=$3 [NC]
+RewriteRule ^([a-z0-9-]+)$ $1.php [NC]
+RewriteRule ^([a-z0-9-]+)\/([a-z0-9-]+)$ $1/$2.php [NC]

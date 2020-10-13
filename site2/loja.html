@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Um site de servidor</title>
+		
+		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	
+	<body>
+		<nav>
+			<ul>
+				<div><a href="#">Meu Servidor</a></div>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="regras.html">Regras</a></li>
+				<li><a href="#">Loja</a></li>
+				<li><a href="#">Forum</a></li>
+			</ul>
+		</nav>
+		<div id="aviso">
+			<h1>Aviso!</h1>
+			<h3>
+				Nosso servidor não tem nenhuma relação com a empresa Mojang.<br/>
+				Toda e qualquer reclamação deve ser feita via nosso email: <a href="mailto:vendas@meuservidor.com.br">vendas@meuservidor.com.br</a>
+			</h3>
+			<h2>
+				Fique ciente que ao comprar qualquer item em nosso servidor você estará fazendo uma doação, por tanto, não haverá reembolso em casos futuros. Caso o cliente tente chargeback, o mesmo será banido do servidor!
+			</h2>
+		</div>
+		<div id="loja">
+			<div class="row">
+				<div class="quadro">
+					<div class="titulo">
+						<img src="src/vip-Gold-badge.png"><br/>
+						Vip Gold
+					</div>
+					<div class="body">
+						Ah, ter privilégios... Quem não quer?<br/>
+						<button data-modal-target-id="modal-vipgold">Vantagens</button>
+						<a href="https://pagseguro.uol.com.br/" target="_blank"><button>Comprar</button></a>
+					</div>
+				</div>
+				<div class="quadro">
+					<div class="titulo">
+						<img src="src/vip-Diamond-badge.png"><br/>
+						Vip Diamond
+					</div>
+					<div class="body">
+						Ser o top dos tops, seria esse o objetivo?<br/>
+						<button data-modal-target-id="modal-vipdiamond">Vantagens</button>
+						<a href="https://pagseguro.uol.com.br/" target="_blank"><button>Comprar</button></a>
+					</div>
+				</div>
+				<div class="quadro">
+					<div class="titulo">
+						<img src="src/vip-Iron-badge.png"><br/>
+						Vip Iron
+					</div>
+					<div class="body">
+						Um belo guerreiro com muitas qualidades!<br/>
+						<button data-modal-target-id="modal-vipiron">Vantagens</button>
+						<a href="https://pagseguro.uol.com.br/" target="_blank"><button>Comprar</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="quadro">
+					<div class="titulo">
+						<img src="src/uban-icon.png"><br/>
+						Unban
+					</div>
+					<div class="body">
+						Foi banido e pode ser desbanido? Olha que bela oportunidade!<br/>
+						<a href="https://pagseguro.uol.com.br/" target="_blank"><button>Comprar</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<h1>FusionMC &copy; 2017</h1>
+			<h3>Desenvolvido por <a href="http://gamersboard.com.br/user/200-dery/">David Nery</a></h3>
+		</footer>
+		
+		<!-- Modals -->
+		<div class="dery-modal" id="modal-vipgold">
+			<div class="dery-modal-title">
+				Vip Gold
+				<span class="dery-modal-close">&times;</span>
+			</div>
+			<div class="dery-modal-content">
+				<center><img src="http://fusionmc.com.br/img/logo_cima.png" draggable="false"><br/></center>
+				<b>Ao comprar este vip você terá direito à:</b><br/>
+				Falar no /g;<br/>
+				Escrever colorido;<br/>
+				<span class="tooltip">
+					Falar no chatvip;
+					<span class="tooltip-content">Utilize /chatvip {mensagem}!</span>
+				</span><br/>
+				Criar lojas;<br/>
+				Setar até 10 homes;<br/>
+				Ter tag especial dentro do servidor;<br/>
+				E muito mais!
+			</div>
+		</div>
+		<div class="dery-modal" id="modal-vipiron">
+			<div class="dery-modal-title">
+				Vip Iron
+				<span class="dery-modal-close">&times;</span>
+			</div>
+			<div class="dery-modal-content">
+				<center><img src="http://fusionmc.com.br/img/logo_cima.png" draggable="false"><br/></center>
+				<b>Ao comprar este vip você terá direito à:</b><br/>
+				Falar no /g;<br/>
+				Escrever colorido;<br/>
+				<span class="tooltip">
+					Falar no chatvip;
+					<span class="tooltip-content">Utilize /chatvip {mensagem}!</span>
+				</span><br/>
+				Criar lojas;<br/>
+				Setar até 50 homes;<br/>
+				Ter tag especial dentro do servidor;<br/>
+				E muito mais!
+			</div>
+		</div>
+		<div class="dery-modal" id="modal-vipdiamond">
+			<div class="dery-modal-title">
+				Vip Diamond
+				<span class="dery-modal-close">&times;</span>
+			</div>
+			<div class="dery-modal-content">
+				<center><img src="http://fusionmc.com.br/img/logo_cima.png" draggable="false"><br/></center>
+				<b>Ao comprar este vip você terá direito à:</b><br/>
+				Falar no /g;<br/>
+				Escrever colorido;<br/>
+				<span class="tooltip">
+					Falar no chatvip;
+					<span class="tooltip-content">Utilize /chatvip {mensagem}!</span>
+				</span><br/>
+				Criar lojas;<br/>
+				Setar até 100 homes;<br/>
+				Ter tag especial dentro do servidor;<br/>
+				E muito mais!
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('f 1=$("<8 g=\'b-0-1\'></8>"),0;2 6(){0.7(3);1.7(3,2(){1.c()})}$("d, a").5("4",2(){0=$(e).n("0-o-m");l(0!=h){$("i").j(1);1.9(3);0=$("#"+0);0.9(3);1.5("4",2(){6()})}});$(".b-0-k").5("4",2(){6()});',25,25,'modal|bg|function|200|click|on|closeModal|fadeOut|div|fadeIn||dery|remove|button|this|var|class|undefined|body|append|close|if|id|data|target'.split('|'),0,{}))</script>
+	</body>
+</html>
